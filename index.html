@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object Detection with JavaScript</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <style>
+        #outputCanvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Object Detection with JavaScript</h1>
+
+    <!-- Image Input -->
+    <input type="file" id="imageInput" accept="image/*" />
+    
+    <!-- Canvas for drawing predictions -->
+    <canvas id="outputCanvas"></canvas>
+
+    <script src="object_detection.js"></script> <!-- Link to the external JS file -->
+</body>
+</html>
